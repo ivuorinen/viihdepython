@@ -9,6 +9,8 @@ def init_argparser():
     parser = argparse.ArgumentParser(description='Elisa viihde library scripts.')
     parser.add_argument('-u', '--user', help='username')
     parser.add_argument('-p', '--passfile', help='password file')
+    parser.add_argument('-v', '--verbose', action='count', help='script verbosity. -v default, -vvv very', default=0)
+
     return parser
 
 
